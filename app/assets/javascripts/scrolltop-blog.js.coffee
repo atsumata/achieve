@@ -7,7 +7,7 @@ ready = ->
       element.fadeIn() if !visible
     else
       element.fadeOut()
-  $(document).on 'click', '#move-page-top', ->
+  $(document).on 'click', '#transition-page-top', ->
     $('html, body').animate(window.location.href = '/', 'slow')
 $(document).ready(ready)
 $(document).on('page:load', ready)
